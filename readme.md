@@ -68,9 +68,22 @@ Please download them manually and unzip into the appropriate folders:
 
 > **Binary classification in Pretrained CNN:**  
 > The `Pretrained_cnn/` model simplifies the problem into **two categories**:
-> - `healthy` (no visible disease)
-> - `unhealthy` (any disease present)
+> - `healthy` (class 0, no visible disease) 
+> - `unhealthy` (class 1, any disease present)
 
+> **Multiclass classification (Tomato CNN & Transfer Learning):**  
+> The `Tomato_dataset.zip` includes **10 distinct classes** of tomato leaf conditions:
+> - `Target Spot` (class 0)
+> - `Late Blight` (class 1)
+> - `Mosaic Virus` (class 2)
+> - `Leaf Mold` (class 3)
+> - `Bacterial Spot` (class 4)
+> - `Early Blight` (class 5)
+> - `Healthy` (class 6)
+> -  `Yellow Leaf Curl Virus` (class 7)
+> -  `Spider Mites (Two-Spotted Spider Mite)` (class 8)
+> -  `Septoria Leaf Spot` (class 9)
+> -  
 Label mapping is handled by the `process.py` script, which converts folder names or filenames into binary labels.
 
 ## Installation
