@@ -62,7 +62,7 @@ Please download them manually and unzip into the appropriate folders:
   Used for pretraining the CNN model on general plant leaf disease images.
 
 - [Tomato Leaf Detection Dataset (Kaggle Notebook)](https://www.kaggle.com/code/adinishad/tomato-leaf-detection-by-transfer-learning/notebook)  
-  Used for transfer learning on tomato-specific disease categories.
+  Used for baseline: Tomato_cnn and transfer learning on tomato-specific disease categories: Tomato_pretrained_cnn.
 
 > **Image size:** All input images are resized to `128 × 128` during preprocessing for consistency and computational efficiency.
 
