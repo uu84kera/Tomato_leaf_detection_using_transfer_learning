@@ -53,18 +53,26 @@ tomato-leaf-detection-using-transfer-learning/
 ├── test_labels.txt
 └── README.md
 ```
-
 ## Dataset
 
 The following datasets are used in this project but not included in the repository due to [GitHub file size limitations](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).  
 Please download them manually and unzip into the appropriate folders:
 
-- 🍃 [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
+- [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
   Used for pretraining the CNN model on general plant leaf disease images.
 
-- 🍅 [Tomato Leaf Detection Dataset (Kaggle Notebook)](https://www.kaggle.com/code/adinishad/tomato-leaf-detection-by-transfer-learning/notebook)  
+- [Tomato Leaf Detection Dataset (Kaggle Notebook)](https://www.kaggle.com/code/adinishad/tomato-leaf-detection-by-transfer-learning/notebook)  
   Used for transfer learning on tomato-specific disease categories.
-  
+
+> **Image size:** All input images are resized to `128 × 128` during preprocessing for consistency and computational efficiency.
+
+> **Binary classification in Pretrained CNN:**  
+> The `Pretrained_cnn/` model simplifies the problem into **two categories**:
+> - `healthy` (no visible disease)
+> - `unhealthy` (any disease present)
+
+Label mapping is handled by the `process.py` script, which converts folder names or filenames into binary labels.
+
 ## Installation
 
 To install dependencies, run:
@@ -104,6 +112,7 @@ The `train.py` script is used to train a CNN or fine-tune a pre-trained model on
 python train.py --batch-size 32 --lr 0.0005 --epochs 100
 ```
 
+
 ---
 
 ### `evaluation.py` – Model Evaluation
@@ -126,3 +135,4 @@ The `evaluation.py` script evaluates the trained model using the test dataset. I
 ```bash
 python evaluation.py --batch-size 64 --num-classes 10
 ```
+Note: All images are resized to 128×128 during training and evaluation.
