@@ -5,51 +5,54 @@ A deep learning-based system for classifying tomato leaf diseases using transfer
 This project aims to identify various tomato leaf diseases using deep learning models. It leverages pre-trained CNNs to improve detection accuracy and robustness.
 
 ## Project Structure
-📁 Tomato-leaf-detection-using-transfer-learning/
-├── 📁 Tomato_cnn/                      # CNN trained from scratch
-│   ├── 📁 logs/                        # Training logs
-│   ├── 📁 saved_ckpt/                 # Model checkpoints
-│   ├── 📁 class_confusion_matrices/   # Per-class confusion matrices
-│   ├── 📄 confusion_matrix.pdf
-│   ├── 📄 roc_curve_tomato_cnn.pdf
-│   ├── 📄 model.py
-│   ├── 📄 data_loader.py
-│   ├── 📄 train.py
-│   └── 📄 evaluation.py
+<details>
+<summary>Project Structure (click to expand)</summary>
+tomato-leaf-detection-using-transfer-learning/
+├── Tomato_cnn/                      # CNN trained from scratch
+│   ├── logs/
+│   ├── saved_ckpt/
+│   ├── class_confusion_matrices/
+│   ├── confusion_matrix.pdf
+│   ├── roc_curve_tomato_cnn.pdf
+│   ├── model.py
+│   ├── data_loader.py
+│   ├── train.py
+│   └── evaluation.py
 │
-├── 📁 Pretrained_cnn/                 # Pre-trained CNN on PlantVillage dataset
-│   ├── 📁 main/
-│   │   ├── 📁 logs/
-│   │   ├── 📁 saved_ckpt/
-│   │   ├── 📁 saved_feature/
-│   │   ├── 📄 confusion_matrix_pretrained_cnn.pdf
-│   │   ├── 📄 roc_curve_pretrained_cnn.pdf
-│   │   ├── 📄 model.py
-│   │   ├── 📄 train.py
-│   │   └── 📄 evaluation.py
-│   ├── 📄 plantvillage_dataset.zip         # External dataset (not uploaded)
-│   ├── 📄 process.py
-│   ├── 📄 train_labels.txt
-│   ├── 📄 validate_labels.txt
-│   └── 📄 test_labels.txt
+├── Pretrained_cnn/                 # Pre-trained CNN on PlantVillage dataset
+│   ├── main/
+│   │   ├── logs/
+│   │   ├── saved_ckpt/
+│   │   ├── saved_feature/
+│   │   ├── confusion_matrix_pretrained_cnn.pdf
+│   │   ├── roc_curve_pretrained_cnn.pdf
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   └── evaluation.py
+│   ├── plantvillage_dataset.zip         # Not uploaded (too large)
+│   ├── process.py
+│   ├── train_labels.txt
+│   ├── validate_labels.txt
+│   └── test_labels.txt
 │
-├── 📁 Tomato_pretrained_cnn/         # Transfer learning using pre-trained CNN
-│   ├── 📁 logs/
-│   ├── 📁 saved_ckpt/
-│   ├── 📁 class_confusion_matrices/
-│   ├── 📄 confusion_matrix.pdf
-│   ├── 📄 roc_curve_tomato_cnn.pdf
-│   ├── 📄 model.py
-│   ├── 📄 data_loader.py
-│   ├── 📄 train.py
-│   └── 📄 evaluation.py
+├── Tomato_pretrained_cnn/         # Transfer learning using pre-trained CNN
+│   ├── logs/
+│   ├── saved_ckpt/
+│   ├── class_confusion_matrices/
+│   ├── confusion_matrix.pdf
+│   ├── roc_curve_tomato_cnn.pdf
+│   ├── model.py
+│   ├── data_loader.py
+│   ├── train.py
+│   └── evaluation.py
 │
-├── 📄 Tomato_dataset.zip             # Local dataset (not uploaded)
-├── 📄 process.py                     # Data processing script
-├── 📄 train_labels.txt
-├── 📄 validate_labels.txt
-├── 📄 test_labels.txt
-└── 📄 README.md
+├── Tomato_dataset.zip             # Not uploaded (too large)
+├── process.py
+├── train_labels.txt
+├── validate_labels.txt
+├── test_labels.txt
+└── README.md
+</details>
 
 ## Installation
 
