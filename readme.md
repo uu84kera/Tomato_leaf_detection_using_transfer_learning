@@ -54,6 +54,17 @@ tomato-leaf-detection-using-transfer-learning/
 └── README.md
 ```
 
+## Dataset
+
+The following datasets are used in this project but not included in the repository due to [GitHub file size limitations](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).  
+Please download them manually and unzip into the appropriate folders:
+
+- 🍃 [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
+  Used for pretraining the CNN model on general plant leaf disease images.
+
+- 🍅 [Tomato Leaf Detection Dataset (Kaggle Notebook)](https://www.kaggle.com/code/adinishad/tomato-leaf-detection-by-transfer-learning/notebook)  
+  Used for transfer learning on tomato-specific disease categories.
+  
 ## Installation
 
 To install dependencies, run:
