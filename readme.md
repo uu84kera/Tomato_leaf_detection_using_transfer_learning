@@ -5,8 +5,8 @@ A deep learning-based system for classifying tomato leaf diseases using transfer
 This project aims to identify various tomato leaf diseases using deep learning models. It leverages pre-trained CNNs to improve detection accuracy and robustness.
 
 ## Project Structure
-<details>
-<summary>Project Structure (click to expand)</summary>
+
+```
 tomato-leaf-detection-using-transfer-learning/
 ├── Tomato_cnn/                      # CNN trained from scratch
 │   ├── logs/
@@ -52,7 +52,7 @@ tomato-leaf-detection-using-transfer-learning/
 ├── validate_labels.txt
 ├── test_labels.txt
 └── README.md
-</details>
+```
 
 ## Installation
 
