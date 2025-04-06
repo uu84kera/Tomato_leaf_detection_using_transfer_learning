@@ -83,7 +83,7 @@ Please download them manually and unzip into the appropriate folders:
 > -  `Yellow Leaf Curl Virus` (class 7)
 > -  `Spider Mites (Two-Spotted Spider Mite)` (class 8)
 > -  `Septoria Leaf Spot` (class 9)
-> -  
+ 
 Label mapping is handled by the `process.py` script, which converts folder names or filenames into binary labels.
 
 ## Installation
