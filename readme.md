@@ -88,11 +88,12 @@ Label mapping is handled by the `process.py` script, which converts folder names
 
 ## Installation
 
-To install dependencies, run:
+This project requires Python 3.8+ and PyTorch 1.9.0+.
+
+To install all required dependencies, simply run:
 
 ```bash
-pip install torch
-pip install matplotlib
+pip install -r requirements.txt
 ```
 
 ## Instruction
