@@ -51,6 +51,7 @@ tomato-leaf-detection-using-transfer-learning/
 ├── train_labels.txt
 ├── validate_labels.txt
 ├── test_labels.txt
+├── requirements.txt
 └── README.md
 ```
 ## Dataset
